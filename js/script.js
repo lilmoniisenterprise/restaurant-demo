@@ -54,69 +54,75 @@
 
   const MENU = [
     { id: "market-crudo", cat: "specials", name: "Octopus Carpaccio Crudo", price: 2200, tags: ["gf"], badge: "Daily",
-      desc: "Paper-thin octopus, citrus, Fresno chili, capers, sea salt and first-press olive oil." },
-    { id: "seafood-tower", cat: "specials", name: "Harbor Seafood Tower", price: 9800, tags: ["gf"], badge: "Serves 2–4",
-      desc: "Gulf oysters, chilled shrimp and citrus over crushed ice, with mignonette, cocktail sauce and charred lemon." },
+      alt: "Thin rounds of octopus carpaccio in olive oil with a lemon wedge",
+      desc: "Paper-thin octopus, first-press olive oil, lemon, chili and sea salt." },
+    { id: "oyster-platter", cat: "specials", name: "Gulf Oyster Platter", price: 3600, tags: ["gf"], badge: "Dozen",
+      alt: "Fresh oysters on crushed ice with lemon and mignonette",
+      desc: "A dozen Gulf oysters on crushed ice with shallot mignonette, cocktail sauce and lemon." },
     { id: "tasting-menu", cat: "specials", name: "Coastal Tasting Menu", price: 9500, tags: ["dine"], badge: "Per guest", orderable: false,
+      alt: "Artfully plated tasting-menu course with vibrant vegetables on a white plate",
       desc: "Five seasonal courses from the hearth, paced for the table. Dine-in only — reserve and let the kitchen lead." },
     { id: "charred-octopus", cat: "appetizers", name: "Charred Octopus", price: 1900, tags: ["gf"], featured: true,
-      desc: "Wood-grilled tentacles, smoked paprika, white bean purée, preserved lemon and parsley oil." },
-    { id: "burrata", cat: "appetizers", name: "Burrata & Blistered Tomatoes", price: 1700, tags: ["v"],
-      desc: "Creamy burrata, fire-blistered heirloom tomatoes, basil oil, flaky salt, grilled sourdough." },
+      alt: "Charred octopus tentacle on smoked paprika romesco with toasted crumb",
+      desc: "Wood-grilled octopus, smoked paprika romesco, toasted garlic crumb and lemon." },
+    { id: "burrata", cat: "appetizers", name: "Burrata & Heirloom Tomatoes", price: 1700, tags: ["v"],
+      alt: "Burrata on sliced heirloom tomatoes with basil on a white plate",
+      desc: "Creamy burrata, sliced heirloom tomatoes, basil, black olive crumb and olive oil." },
     { id: "hearth-flatbread", cat: "appetizers", name: "Hearth Flatbread", price: 1600, tags: ["v"],
-      desc: "Naturally leavened dough, San Marzano tomato, fior di latte, wild oregano and chili honey." },
+      alt: "Wood-fired flatbread topped with ricotta, arugula and cherry tomatoes",
+      desc: "Naturally leavened pinsa, whipped ricotta, arugula, cherry tomato and chili honey." },
     { id: "crispy-calamari", cat: "appetizers", name: "Crispy Calamari", price: 1500, tags: [],
-      desc: "Semolina-dusted rings, Calabrian chili aioli, charred lemon and herb salt." },
+      alt: "Golden fried calamari rings on a slate board with chili dip and greens",
+      desc: "Semolina-dusted rings, sweet Calabrian chili dip, frisée and lemon." },
     { id: "ember-carrots", cat: "appetizers", name: "Ember-Roasted Carrots", price: 1400, tags: ["v", "gf"],
-      desc: "Heirloom carrots roasted in the coals, whipped labneh, pistachio dukkah and mint." },
-    { id: "whole-branzino", cat: "entrees", name: "Whole Grilled Branzino", price: 3800, tags: ["gf"], featured: true,
-      desc: "Deboned Mediterranean sea bass, salsa verde, shaved fennel, grilled lemon and rosemary." },
+      alt: "Coal-roasted carrots with arugula on a blue ceramic platter",
+      desc: "Heirloom carrots roasted in the coals, harissa honey, arugula and pistachio dukkah." },
+    { id: "grilled-snapper", cat: "entrees", name: "Wood-Grilled Gulf Snapper", price: 3800, tags: ["gf"], featured: true,
+      alt: "Grilled snapper with charred tomatoes, lemon and green chili on a terracotta platter",
+      desc: "Day-boat snapper grilled over oak with charred tomato, green chili, lemon and herbs." },
     { id: "saffron-paella", cat: "entrees", name: "Saffron Seafood Paella", price: 5600, tags: ["gf"], badge: "For two", featured: true,
-      desc: "Bomba rice, Gulf shrimp, mussels, sweet peas and a crackling socarrat crust, finished at the table." },
-    { id: "hearth-ribeye", cat: "entrees", name: "16 oz Hearth Ribeye", price: 5400, tags: ["gf"],
-      desc: "Dry-aged and oak-fired, with chimichurri, roasted garlic and flaky sea salt." },
-    { id: "lamb-shoulder", cat: "entrees", name: "Wood-Fired Lamb Chops", price: 4200, tags: ["gf"],
-      desc: "Frenched lamb chops kissed by oak smoke, crispy potatoes, greens and rosemary jus." },
+      alt: "Saffron paella with shrimp, mussels, clams and lemon in a pan",
+      desc: "Bomba rice, Gulf shrimp, mussels, clams and a crackling socarrat crust, finished at the table." },
+    { id: "hearth-ribeye", cat: "entrees", name: "Bone-In Hearth Ribeye", price: 5400, tags: ["gf"],
+      alt: "Sliced bone-in ribeye, cooked medium rare, on a white platter",
+      desc: "Dry-aged, oak-fired and sliced off the bone, with chimichurri and flaky sea salt." },
+    { id: "lamb-chops", cat: "entrees", name: "Wood-Fired Lamb Chops", price: 4200, tags: ["gf"],
+      alt: "Char-grilled lamb chops close up",
+      desc: "Frenched lamb chops kissed by oak smoke, herb salad and rosemary jus." },
     { id: "mushroom-risotto", cat: "entrees", name: "Wild Mushroom Risotto", price: 2900, tags: ["v", "gf"],
+      alt: "Creamy wild mushroom risotto on a striped plate",
       desc: "Carnaroli rice, foraged mushrooms, aged Parmigiano, thyme and brown butter." },
-    { id: "olive-oil-cake", cat: "desserts", name: "Lemon Olive Oil Cake", price: 1200, tags: ["v"], featured: true,
+    { id: "lemon-olive-oil-cake", cat: "desserts", name: "Lemon Olive Oil Cake", price: 1200, tags: ["v"], featured: true,
+      alt: "Lemon olive oil bundt cake dusted with sugar, surrounded by lemon slices",
       desc: "Tender olive oil bundt cake, Meyer lemon glaze, powdered sugar and candied zest." },
-    { id: "honey-panna-cotta", cat: "desserts", name: "Vanilla Bean Panna Cotta", price: 1100, tags: ["gf"],
-      desc: "Silky vanilla cream, macerated berries, wildflower honey and fresh mint." },
+    { id: "vanilla-panna-cotta", cat: "desserts", name: "Vanilla Bean Panna Cotta", price: 1100, tags: ["gf"],
+      alt: "Vanilla panna cotta with macerated berries, strawberries and mint",
+      desc: "Silky vanilla cream, macerated berries, sliced strawberries and garden mint." },
     { id: "chocolate-tart", cat: "desserts", name: "Dark Chocolate Tart", price: 1300, tags: ["v"],
-      desc: "70% chocolate ganache, brown-butter crust, raspberries and gold leaf." },
-    { id: "sorbet-trio", cat: "desserts", name: "Meyer Lemon Cheesecake", price: 1000, tags: ["v"],
+      alt: "Dark chocolate tart with a crisp pastry shell on a green plate",
+      desc: "70% chocolate ganache in a brown-butter crust with cocoa nib and crème fraîche." },
+    { id: "lemon-cheesecake", cat: "desserts", name: "Meyer Lemon Cheesecake", price: 1000, tags: ["v"],
+      alt: "Slices of lemon cheesecake topped with cream and lemon",
       desc: "Creamy baked cheesecake, brown-butter crust and bright lemon curd." },
     { id: "sea-glass-spritz", cat: "beverages", name: "Sea-Glass Spritz", price: 1400, tags: [], badge: "21+",
-      desc: "Bitter orange aperitivo, prosecco, a pinch of sea salt and a fresh orange wheel." },
+      alt: "Orange aperitivo spritz served over ice",
+      desc: "Bitter orange aperitivo, sparkling wine and a pinch of sea salt, served over ice." },
     { id: "smoked-old-fashioned", cat: "beverages", name: "Smoked Old Fashioned", price: 1600, tags: [], badge: "21+",
-      desc: "Oak-smoked bourbon, demerara, aromatic bitters, brandied cherry." },
+      alt: "Old fashioned cocktail with a large ice cube and orange peel",
+      desc: "Oak-smoked bourbon, demerara, aromatic bitters and expressed orange peel." },
     { id: "garden-negroni", cat: "beverages", name: "Garden Negroni", price: 1500, tags: [], badge: "21+",
-      desc: "Botanical gin, sweet vermouth, bitter aperitivo, charred orange." },
-    { id: "rosemary-lemonade", cat: "beverages", name: "Garden Mint Lemonade", price: 700, tags: ["v", "gf"], badge: "Zero-proof",
+      alt: "Negroni in a cut-crystal glass with ice and an orange twist",
+      desc: "Botanical gin, sweet vermouth, bitter aperitivo and an orange twist." },
+    { id: "mint-lemonade", cat: "beverages", name: "Garden Mint Lemonade", price: 700, tags: ["v", "gf"], badge: "Zero-proof",
+      alt: "Sparkling lemonade with lemon and fresh mint in a crystal glass",
       desc: "Fresh-pressed lemon, garden mint, cane sugar and sparkling water." },
-    { id: "espresso", cat: "beverages", name: "Cortado", price: 500, tags: ["v", "gf"],
+    { id: "cortado", cat: "beverages", name: "Cortado", price: 500, tags: ["v", "gf"],
+      alt: "Cortado in a small glass on a saucer",
       desc: "Single-origin double shot cut with silky steamed milk, roasted locally." }
   ];
-  /* Food photography: Pexels (free to use). Each dish keeps a local illustrated fallback in images/menu/. */
-  const PHOTOS = {
-    "market-crudo": 17243886, "seafood-tower": 10895800, "tasting-menu": 33033817, "charred-octopus": 14885388,
-    "burrata": 20184728, "hearth-flatbread": 21753116, "crispy-calamari": 11160096, "ember-carrots": 39022466,
-    "whole-branzino": 17598332, "saffron-paella": 8969237, "hearth-ribeye": 6542790, "lamb-shoulder": 10821331,
-    "mushroom-risotto": 6406460, "olive-oil-cake": 24742649, "honey-panna-cotta": 3301907, "chocolate-tart": 36051538,
-    "sorbet-trio": 31799935, "sea-glass-spritz": 20094378, "smoked-old-fashioned": 29707924, "garden-negroni": 27851286,
-    "rosemary-lemonade": 27551844, "espresso": 33669195
-  };
-  const pexels = (pid, w) => `https://images.pexels.com/photos/${pid}/pexels-photo-${pid}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
-  const dishImg = (id, w = 800) => (PHOTOS[id] ? pexels(PHOTOS[id], w) : `images/menu/${id}.jpg`);
-  const dishSrcset = (id) => (PHOTOS[id] ? `${pexels(PHOTOS[id], 600)} 600w, ${pexels(PHOTOS[id], 1000)} 1000w` : "");
-  // If a remote photo ever fails, swap in the local illustration (CSP-safe: no inline handlers).
-  document.addEventListener("error", (e) => {
-    const img = e.target;
-    if (img && img.tagName === "IMG" && img.dataset.fallback && img.getAttribute("src") !== img.dataset.fallback) {
-      img.removeAttribute("srcset"); img.src = img.dataset.fallback;
-    }
-  }, true);
+  /* Dish photography is self-hosted in images/menu/<id>.jpg (+ -600.jpg), sourced from Pexels (free license). */
+  const dishImg = (id, small) => `images/menu/${id}${small ? "-600" : ""}.jpg`;
+  const dishSrcset = (id) => `images/menu/${id}-600.jpg 600w, images/menu/${id}.jpg 1200w`;
   const MENU_BY_ID = Object.fromEntries(MENU.map((m) => [m.id, m]));
   const TAG_LABEL = { v: "Vegetarian", gf: "Gluten-free", dine: "Dine-in only" };
 
@@ -284,7 +290,7 @@
     if (list) {
       list.innerHTML = Cart.lines().map(({ item, qty, total }) => `
         <li class="cart-item">
-          <img src="${dishImg(item.id, 200)}" data-fallback="images/menu/${item.id}.jpg" alt="" width="64" height="64" loading="lazy">
+          <img src="${dishImg(item.id, true)}" alt="" width="64" height="64" loading="lazy">
           <div>
             <h3>${esc(item.name)}</h3>
             <div class="unit">${money(item.price)} each</div>
@@ -482,7 +488,7 @@
     return `
       <article class="card dish-card reveal" data-cat="${item.cat}">
         <div class="dish-media">
-          <img src="${dishImg(item.id, 1000)}" srcset="${dishSrcset(item.id)}" sizes="(max-width: 620px) 100vw, (max-width: 920px) 50vw, 400px" data-fallback="images/menu/${item.id}.jpg" alt="${esc(item.name)}" width="1200" height="900" loading="lazy" decoding="async">
+          <img src="${dishImg(item.id)}" srcset="${dishSrcset(item.id)}" sizes="(max-width: 620px) 100vw, (max-width: 920px) 50vw, 400px" alt="${esc(item.alt || item.name)}" width="1200" height="900" loading="lazy" decoding="async">
           ${item.badge ? `<span class="badge">${esc(item.badge)}</span>` : ""}
         </div>
         <div class="card-body">

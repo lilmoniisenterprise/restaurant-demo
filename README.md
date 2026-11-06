@@ -1,12 +1,17 @@
-# Ondessa — Coastal Hearth Kitchen (Restaurant Demo)
+# ONDESSA — Coastal Hearth Kitchen
 
-**Portfolio Project 01 · Virellion Apex**
+**Restaurant & hospitality demonstration website · Portfolio Project 01 · Virellion Apex**
 
-A premium, fully responsive restaurant and hospitality website built with plain HTML5, CSS3 and vanilla JavaScript. Ondessa is a **fictional** wood-fired coastal restaurant. It was created to show prospective clients what Virellion Apex can build.
+**Live site:** https://lilmoniisenterprise.github.io/restaurant-demo/
+**Repository:** https://github.com/lilmoniisenterprise/restaurant-demo
+
+A premium, fully responsive restaurant website built with plain HTML5, CSS3 and vanilla JavaScript (no frameworks, no build step, no API keys). ONDESSA is a **fictional** wood-fired coastal restaurant created to show prospective clients what Virellion Apex can build.
 
 > This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes.
 
-All reservations, catering inquiries, contact messages and orders run in **demonstration mode**. They are validated and confirmed on screen, but nothing is sent anywhere, no booking is made and no payment is taken.
+Ordering, payments, reservations, catering inquiries and contact messages all run in **demonstration mode**. They validate input and show realistic confirmations, but nothing is transmitted, no booking is made and no money moves.
+
+See also: [`CHANGELOG.md`](CHANGELOG.md) (improvements made) · [`TESTING.md`](TESTING.md) (QA report).
 
 ---
 
@@ -14,14 +19,14 @@ All reservations, catering inquiries, contact messages and orders run in **demon
 
 | Area | What it demonstrates |
 |---|---|
-| **Homepage** | Full-bleed hero, live "open now / closed" status, brand story, featured dishes with add-to-order, weekly specials, sample testimonials (clearly labelled), catering/private-dining entry points, reservation call to action |
-| **Online menu** (`menu.html`) | 22 dishes across Specials, Appetizers, Entrées, Desserts and Beverages; images, descriptions, prices, dietary tags; category filters with counts; search; Vegetarian and Gluten-free filters; deep links (`menu.html#desserts`); dine-in-only items |
-| **Mobile ordering demo** | Cart saved across pages (localStorage), quantity +/−, remove, pickup or delivery, subtotal, demo delivery fee, 8.25% tax estimate, total, sticky mobile "View order" bar, checkout with validation and pickup times based on opening hours, demo confirmation. **No card fields are collected.** |
-| **Reservations** | Date (closed Mondays, 60-day window), time slots generated from that day's hours (past times removed for today), party size, seating choice, contact details, policy checkbox, inline and summary errors, demo confirmation, downloadable `.ics` calendar file |
-| **Catering** | Three packages, event types, a four-step process, inquiry form (guest count 15–300, 7-day minimum notice, service style, dietary needs) and a **live cost estimate** |
-| **Location & hours** | Address, phone, email, hours table with today highlighted, live OpenStreetMap map with a Get directions link, contact form, FAQ |
-| **Quality** | Semantic landmarks, skip link, keyboard-friendly navigation, visible focus states, ARIA on dialogs, filters and live regions, reduced-motion support, SEO and Open Graph/Twitter metadata, JSON-LD, sitemap, security headers with a strict CSP |
-| **Lead generation** | Dismissible demo ribbon plus "Request a Similar Website" and "Schedule a Consultation" calls to action linking to https://virellionapex.com |
+| **Homepage** | Official logo, photographic hero, live "open now / opens at" status, brand story, featured dishes with add-to-order, weekly specials, sample reviews (clearly labelled), catering/private-dining entry points, reservation call to action |
+| **Menu** (`menu.html`) | 22 dishes in 5 categories (Specials, Appetizers, Entrées, Desserts, Beverages), each with a matched photo, description, price and dietary tags; category filters with counts; search; Vegetarian / Gluten-free filters; deep links (`menu.html#desserts`); dine-in-only item; compact app-style rows on phones |
+| **Ordering & payment demo** | Cart saved in localStorage, quantity +/−, remove, pickup or delivery, delivery fee, 8.25% tax, tip (15/18/20%/none), payment by Card, Apple Pay, Google Pay or Pay at pickup, processing animation, receipt, live order tracker. The card panel uses a **read-only test card**, so real card data can never be entered. |
+| **Reservations** | Date (closed Mondays, 60-day window), time slots generated from opening hours (past times removed), party size, seating choice, validation with inline and summary errors, demo confirmation, `.ics` calendar download |
+| **Catering** | Three packages, event types, process steps, events photo gallery, inquiry form (15–300 guests, 7-day notice, dietary needs) with a live cost estimate |
+| **Visit / contact** | Address, phone, email, hours table with today highlighted, live OpenStreetMap map, "Get directions" link, contact form, FAQ |
+| **Quality** | Semantic HTML, skip link, keyboard navigation, visible focus, accessible dialogs and live regions, reduced-motion support, descriptive alt text, SEO / Open Graph / Twitter metadata, JSON-LD, sitemap, Content-Security-Policy |
+| **Lead generation** | Discreet demo bar plus "Request a Similar Website" and "Schedule a Consultation" calls to action linking to https://virellionapex.com |
 
 ---
 
@@ -29,152 +34,93 @@ All reservations, catering inquiries, contact messages and orders run in **demon
 
 ```
 restaurant-demo/
-├── index.html            Homepage
-├── about.html            Brand story
-├── menu.html             Interactive menu + ordering
-├── reservations.html     Reservation form
-├── catering.html         Packages + inquiry form + estimate
-├── contact.html          Location, hours, map placeholder, contact form, FAQ
-├── 404.html              Custom not-found page (Cloudflare Pages serves it automatically)
-├── css/style.css         All styles (design tokens at the top)
-├── js/script.js          All behaviour: menu data, cart, forms, hours, config
+├── index.html · about.html · menu.html · reservations.html · catering.html · contact.html · 404.html
+├── css/style.css            All styles (design tokens at the top)
+├── js/script.js             Menu data, cart, checkout/payment demo, forms, hours, config
 ├── images/
-│   ├── logo.png / logo.svg
-│   ├── hero.jpg
-│   ├── about-*.jpg, catering-*.jpg
-│   └── menu/             One image per dish, named by dish id (e.g. saffron-paella.jpg)
-├── assets/               favicon.svg, apple-touch-icon.png, icon-512.png, og-image.jpg
-├── _headers              Cloudflare Pages security and cache headers
-├── robots.txt, sitemap.xml, site.webmanifest
-├── .gitignore
-└── README.md
+│   ├── logo.png             Official ONDESSA logo (transparent, light-on-dark)
+│   ├── logo-header.png      Trimmed logo used in the header and footer
+│   ├── logo.svg             Vector version (uses system serif fonts; prefer the PNGs)
+│   ├── hero.jpg, hero-600.jpg
+│   ├── menu/                One photo per dish: <dish-id>.jpg (1200px) + <dish-id>-600.jpg
+│   ├── photos/              Section photography (hearth, dining room, catering, events)
+│   └── illustrations/       Original illustrated artwork from v1 (not used on pages; kept for reference)
+├── assets/                  favicon.svg, apple-touch-icon.png, icon-512.png, og-image.jpg
+├── .nojekyll                Tells GitHub Pages to serve files as-is
+├── _headers                 Security headers for Cloudflare Pages (ignored by GitHub Pages)
+├── robots.txt · sitemap.xml · site.webmanifest
+├── README.md · CHANGELOG.md · TESTING.md
 ```
 
-## External dependencies
+### Images
 
-- **Google Fonts** (free): Cormorant Garamond (headings) and Inter (body). If the fonts can't load, the site falls back to system serif and sans-serif fonts.
-- Nothing else: no frameworks, no build step, no API keys, no paid services.
+All photography is **self-hosted** in this repository: no external image links. The photos were sourced from **Pexels** (free for commercial use, attribution not required; credited in the footer), then cropped and compressed for the web. Each was checked by eye against its dish or section. Every image has descriptive alt text: dish alt text is the `alt` field in `MENU` in `js/script.js`, and section alt text is in the HTML.
 
-## Images
+For a real client, replace the photos with the restaurant's own photography, keeping the file names (or updating `MENU` ids). Export dish photos at 4:3, 1200×900, plus a 600×450 `-600` copy, at about 75–80% JPEG quality.
 
-Food and venue photography loads from **Pexels** (free for commercial use, no attribution required; credited in the footer). Photo IDs are set in `PHOTOS` in `js/script.js` and `STATIC_PHOTOS` in the page HTML (`images.pexels.com/photos/<id>/...`). Each image also has a local fallback in `images/`, which the site swaps in automatically if a photo ever fails to load. For a real client, replace them with the restaurant's own photography.
+### External dependencies
 
-## Payment demo
+- **Google Fonts** (free): Cormorant Garamond and Inter, with system-font fallbacks.
+- **OpenStreetMap** embed on the contact page (free, no key).
+- Nothing else.
 
-Checkout shows a complete payment experience: tip selection, Card / Apple Pay / Google Pay / Pay at pickup, a processing animation, a receipt and a live order tracker. The card panel is pre-filled with a **read-only test card (4242 4242 4242 4242)**, so the demo can never collect real card data, and nothing is charged. To take real payments, replace the panel with Stripe Checkout / Payment Element or Square Web Payments and confirm orders through a server-side function (see "Connecting a real backend").
+---
+
+## Deployment: GitHub Pages (current)
+
+The site is deployed from the `main` branch, root folder:
+
+1. Repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch `main`, folder `/ (root)` → **Save**.
+2. Every push to `main` redeploys automatically within about a minute.
+
+GitHub Pages specifics handled in this project:
+- All asset paths are **relative**, so the site works under the `/restaurant-demo/` sub-path.
+- `.nojekyll` disables Jekyll processing.
+- GitHub Pages can't send custom HTTP headers, so the **Content-Security-Policy is set with a `<meta>` tag** in every page. `_headers` is only used if the site moves to Cloudflare Pages.
+- Canonical, Open Graph, sitemap and JSON-LD URLs point to `https://lilmoniisenterprise.github.io/restaurant-demo/`.
+- `robots.txt` is only read by crawlers at a domain root, so on a GitHub project site it is informational. It takes effect if the site moves to its own domain or subdomain.
+- `404.html` is served for unknown URLs. Its relative asset paths resolve correctly for missing pages one level deep (e.g. `/restaurant-demo/anything`).
+
+### Optional: Cloudflare Pages + custom subdomain
+
+1. Cloudflare → **Workers & Pages → Create → Pages → Connect to Git** → select this repo.
+2. Framework preset **None**, build command empty, output directory `/`.
+3. **Custom domains** → add e.g. `restaurant.virellionapex.com`.
+4. Then find-and-replace `https://lilmoniisenterprise.github.io/restaurant-demo/` with the new URL in the HTML files, `sitemap.xml` and `robots.txt`. `_headers` will then apply automatically.
 
 ---
 
 ## Run locally
 
-Opening `index.html` directly works, but a local server matches production behaviour more closely:
-
 ```bash
-cd restaurant-demo
-python3 -m http.server 8080
-# then open http://localhost:8080
+python3 -m http.server 8080   # from the project folder, then open http://localhost:8080
 ```
 
-## Deploy: GitHub + Cloudflare Pages (free)
-
-1. **Create the repository.** On GitHub, create a new repository named `restaurant-demo` (public or private).
-2. **Push the files.** From inside the `restaurant-demo` folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Ondessa restaurant demo"
-   git branch -M main
-   git remote add origin https://github.com/<your-account>/restaurant-demo.git
-   git push -u origin main
-   ```
-3. **Connect Cloudflare Pages.** In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Connect to Git** and select the repository.
-4. **Build settings:**
-   - Framework preset: **None**
-   - Build command: *(leave empty)*
-   - Build output directory: **`/`**
-5. Click **Save and Deploy**. You'll get a URL like `https://restaurant-demo.pages.dev`. Every later push to `main` redeploys automatically.
-6. **Custom subdomain (optional).** In the Pages project, open **Custom domains → Set up a domain** and enter `restaurant.virellionapex.com`. If the domain's DNS is on Cloudflare, the record is created for you; otherwise add the CNAME it shows. Wait for the SSL certificate to become active, then test the live URL before listing it in the portfolio.
-7. **Verify after deploy:** open every page, add items to the cart, run through checkout, the reservation and the catering inquiry on a phone, and check the response headers (DevTools → Network → `index.html`) to confirm `_headers` is applied.
-
-### Update the domain placeholders
-
-The canonical and Open Graph URLs use `https://restaurant.virellionapex.com/` as a placeholder. If you deploy elsewhere, find and replace it in:
-
-- all `*.html` files (canonical, `og:url`, `og:image`, `twitter:image`, JSON-LD)
-- `sitemap.xml` and `robots.txt`
-
-> **SEO note:** The JSON-LD on `index.html` describes a fictional business. That's fine for a portfolio demo. If you'd rather keep the demo out of search results, add `<meta name="robots" content="noindex, follow">` to each page. For a real client, replace every field with verified details.
-
----
-
-## Replacing the demo content (for a real restaurant)
+## Replacing the demo content (real client)
 
 | What | Where |
 |---|---|
-| Name, logo, colours, fonts | `images/logo.*`, `assets/favicon.svg`; colour and font tokens in `:root` at the top of `css/style.css` |
-| Menu items, prices, tags | `MENU` array in `js/script.js` (prices are in **cents**; `orderable: false` makes a dish dine-in only) |
-| Categories | `CATEGORIES` array in `js/script.js` |
-| Opening hours | `HOURS` object in `js/script.js` **and** the hours tables in the HTML (footer, reservations, contact) and the JSON-LD |
-| Time zone, tax, delivery fee, catering service rate | `CONFIG` in `js/script.js` |
-| Catering packages and prices | `PACKAGES` in `js/script.js` plus the package cards and radio options in `catering.html` |
-| Address, phone, email | Footer, contact page, header mobile menu, JSON-LD (search for `Seawall Promenade`, `555-0148` and `ondessa.example`) |
-| Testimonials | `index.html`: replace with **verified** reviews only, and remove the "sample" labels once they're real |
-| Demo ribbon and notices | Remove the `.demo-ribbon` block and the `.demo-notice` boxes once real backends are live, and set `CONFIG.demoMode = false` |
-| Map | Replace `.map-placeholder` in `contact.html` with a Google Maps or OpenStreetMap `<iframe>`, then add that origin to `frame-src` in `_headers` (for example `frame-src https://www.google.com https://www.openstreetmap.org`) |
+| Logo | `images/logo.png`, `images/logo-header.png`, `assets/favicon.svg` |
+| Colours, fonts | `:root` tokens at the top of `css/style.css` |
+| Menu items, prices, tags, alt text | `MENU` in `js/script.js` (prices in **cents**; `orderable: false` = dine-in only; photo = `images/menu/<id>.jpg`) |
+| Opening hours | `HOURS` in `js/script.js` + hours tables in the HTML + JSON-LD on `index.html` |
+| Time zone, tax, fees | `CONFIG` in `js/script.js` |
+| Catering packages | `PACKAGES` in `js/script.js` + package cards/radios in `catering.html` |
+| Address / phone / email | Footer, contact page, mobile menu, JSON-LD |
+| Reviews | `index.html`: use **verified** reviews only, then remove the "sample" labels |
+| Demo notices | Remove the `.demo-ribbon`, `.demo-notice` blocks and the test-card panel once real services are connected; set `CONFIG.demoMode = false` |
 
----
+## Connecting real services
 
-## Connecting a real backend
+All submissions go through `submitToBackend(kind, payload)` in `js/script.js`. Set `CONFIG.demoMode = false` and fill `CONFIG.endpoints`. Never put secret keys in front-end code.
 
-Every form submission goes through one function in `js/script.js`:
+| Need | Recommended |
+|---|---|
+| Reservations | OpenTable / Resy / SevenRooms / Tock widget or link (handles availability and reminders) |
+| Online ordering + payments | Square Online or Toast, or Stripe Checkout / Payment Element created by a server function. Validate prices server-side and confirm orders via webhooks. |
+| Catering / contact forms | A serverless function (e.g. Cloudflare Pages Functions + D1 + an email API) or a form service (Formspree). Add Cloudflare Turnstile against spam. |
 
-```js
-function submitToBackend(kind, payload) { ... }   // kind: "reservation" | "catering" | "contact" | "order"
-```
-
-To go live, set `CONFIG.demoMode = false` and fill in `CONFIG.endpoints`. The function then `POST`s JSON to that URL. **Never put API keys or secrets in front-end JavaScript.** Keep them in server-side environment variables.
-
-### Recommended low-cost architecture
-
-| Need | Recommended option | Notes |
-|---|---|---|
-| **Reservations** | An established booking platform (OpenTable, Resy, SevenRooms, Tock) embedded or linked | Usually best for real restaurants: they handle availability, reminders and no-shows. Has a per-cover or monthly fee. |
-| Simple reservation and catering requests | **Cloudflare Pages Functions** (free tier) in `/functions/api/*.js`, storing data in **Cloudflare D1** and emailing staff through a transactional email API (Resend, Postmark, etc.) | Add **Cloudflare Turnstile** (free) to block spam. Store the email API key as an encrypted environment variable in Pages settings. |
-| Contact form only | A form service (Formspree, Basin) or the Pages Function above | Quickest option |
-| **Online ordering and payments** | **Square Online / Square for Restaurants**, **Toast**, or **Stripe Checkout** created by a Pages Function | Use the processor's hosted checkout so card data never touches your site (keeps PCI scope minimal). Validate prices **server-side** from your own menu data and never trust totals sent by the browser. Use webhooks to confirm paid orders. |
-| Order notifications to the kitchen | POS integration (Square/Toast) or email/SMS from the webhook handler | |
-
-Example Pages Function skeleton (`functions/api/reservation.js`):
-
-```js
-export async function onRequestPost({ request, env }) {
-  const data = await request.json();
-  // 1. Validate fields server-side (never rely on browser validation alone)
-  // 2. Verify the Turnstile token with env.TURNSTILE_SECRET
-  // 3. Save to D1: await env.DB.prepare("INSERT INTO reservations ...").bind(...).run();
-  // 4. Notify staff via email API using env.EMAIL_API_KEY
-  return Response.json({ ok: true, reference: crypto.randomUUID().slice(0, 8) });
-}
-```
-
-Then set `CONFIG.endpoints.reservation = "/api/reservation"`. Because it's same-origin, the existing CSP (`connect-src 'self'`) already allows the request. When you add Turnstile, payment scripts or an embedded booking widget, add their domains to `script-src`, `frame-src` and `connect-src` in `_headers`.
-
----
-
-## QA performed
-
-An automated headless-Chrome test (101 checks) was run against this build, with the `_headers` CSP applied:
-
-- Every page at phone (390px), tablet (820px) and desktop (1440px): no horizontal overflow, no console or CSP errors
-- All local links and asset paths resolve
-- Menu: category filters and counts, search, empty state, dietary filters, deep links, dine-in-only handling
-- Cart: add from home and menu, persistence across pages, quantity +/−, delivery fee, and tax/total maths (e.g. $98.50 subtotal → $8.13 tax → $106.63 total), checkout validation, confirmation, cart cleared
-- Reservations: required-field errors, Monday rejection, correct time slots, large-party guidance, confirmation, `.ics` file
-- Catering: package selection, estimate maths (40 × $58 + 18% = $2,738), 15-guest minimum, 7-day notice, confirmation
-- Contact: validation and confirmation; today's hours highlighted; open/closed status
-- Accessibility: skip link is the first Tab stop, mobile menu opens and closes with Escape, the cart dialog closes with Escape, focus moves to the first invalid field
-
-Still to check manually after deployment: the live Cloudflare URL and custom domain, real-device testing (iOS Safari, Android Chrome), and a Lighthouse run on the live site.
+When adding third-party scripts, frames or APIs, add their domains to the CSP `<meta>` tag (and to `_headers` if you use Cloudflare).
 
 ---
 

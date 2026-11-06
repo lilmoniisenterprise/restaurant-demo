@@ -1,5 +1,7 @@
-# Demo site by Virellion Apex. Update the sitemap URL when the final domain is connected.
+# Demo site by Virellion Apex.
+# Note: crawlers only read robots.txt at a domain root. On GitHub Pages project sites this file is informational;
+# it becomes active if the site moves to its own domain or subdomain.
 User-agent: *
 Allow: /
 
-Sitemap: https://restaurant.virellionapex.com/sitemap.xml
+Sitemap: https://lilmoniisenterprise.github.io/restaurant-demo/sitemap.xml

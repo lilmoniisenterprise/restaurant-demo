@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Our Story — The Hearth, the Coast & the Table | Ondessa</title>
   <meta name="description" content="Discover the story behind Ondessa: an oak-fired hearth, day-boat seafood and long shared tables on the Galveston seawall.">
-  <!-- Canonical URL placeholder: update BASE domain before launch (see README → SEO). -->
-  <link rel="canonical" href="https://restaurant.virellionapex.com/about.html">
+  <!-- Canonical URL: live GitHub Pages address. Update BASE in the generator / find-and-replace if a custom domain is connected. -->
+  <link rel="canonical" href="https://lilmoniisenterprise.github.io/restaurant-demo/about.html">
   <meta name="robots" content="index, follow">
+  <!-- GitHub Pages can't send custom headers, so the Content-Security-Policy is set here (mirrors _headers for Cloudflare). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-src https://www.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0e1719">
   <meta name="author" content="Virellion Apex">
   <!-- Open Graph -->
@@ -15,8 +18,8 @@
   <meta property="og:site_name" content="Ondessa — Coastal Hearth Kitchen">
   <meta property="og:title" content="Our Story — The Hearth, the Coast & the Table | Ondessa">
   <meta property="og:description" content="Discover the story behind Ondessa: an oak-fired hearth, day-boat seafood and long shared tables on the Galveston seawall.">
-  <meta property="og:url" content="https://restaurant.virellionapex.com/about.html">
-  <meta property="og:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://lilmoniisenterprise.github.io/restaurant-demo/about.html">
+  <meta property="og:image" content="https://lilmoniisenterprise.github.io/restaurant-demo/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Ondessa logo over an illustrated table of wood-fired coastal dishes">
@@ -25,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Our Story — The Hearth, the Coast & the Table | Ondessa">
   <meta name="twitter:description" content="Discover the story behind Ondessa: an oak-fired hearth, day-boat seafood and long shared tables on the Galveston seawall.">
-  <meta name="twitter:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://lilmoniisenterprise.github.io/restaurant-demo/assets/og-image.jpg">
   <!-- Icons & manifest -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -47,10 +50,7 @@
 </div>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html" aria-label="Ondessa, Coastal Hearth Kitchen — home">
-      <svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg>
-      <span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span>
-    </a>
+    <a class="brand" href="index.html" aria-label="Ondessa, Coastal Hearth Kitchen — home"><img class="brand-logo" src="images/logo-header.png" alt="ONDESSA — Coastal Hearth Kitchen" width="560" height="134"></a>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html" aria-current="page">Our Story</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="catering.html">Catering</a></li><li><a href="contact.html">Visit</a></li></ul>
       <div class="nav-cta-mobile">
@@ -70,7 +70,7 @@
 <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
 <main id="main">
 <section class="page-hero" aria-labelledby="about-title">
-  <img src="https://images.pexels.com/photos/32641697/pexels-photo-32641697.jpeg?auto=compress&cs=tinysrgb&w=2000" data-fallback="images/about-hearth.jpg" alt="" width="1600" height="1200">
+  <img src="images/photos/hearth-fire.jpg" srcset="images/photos/hearth-fire-600.jpg 600w, images/photos/hearth-fire.jpg 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="" width="1600" height="1200">
   <div class="container narrow">
     <p class="breadcrumb"><a href="index.html">Home</a> / Our Story</p>
     <p class="eyebrow light">Our story</p>
@@ -81,7 +81,7 @@
 
 <section class="section" aria-labelledby="hearth-title">
   <div class="container split">
-    <figure class="media-frame reveal"><img src="https://images.pexels.com/photos/32641697/pexels-photo-32641697.jpeg?auto=compress&cs=tinysrgb&w=1600" srcset="https://images.pexels.com/photos/32641697/pexels-photo-32641697.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/32641697/pexels-photo-32641697.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w" sizes="(max-width: 700px) 100vw, 60vw" data-fallback="images/about-hearth.jpg" alt="Illustration of the restaurant's brick hearth burning oak logs" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+    <figure class="media-frame reveal"><img src="images/photos/bread-oven.jpg" srcset="images/photos/bread-oven-600.jpg 600w, images/photos/bread-oven.jpg 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="A cook tending bread in a domed wood-fired oven" width="1600" height="1200" loading="lazy" decoding="async"></figure>
     <div class="reveal">
       <p class="eyebrow">Chapter one</p>
       <h2 id="hearth-title">The hearth</h2>
@@ -93,7 +93,7 @@
 
 <section class="section on-dark" aria-labelledby="coast-title">
   <div class="container split reverse">
-    <figure class="media-frame reveal"><img src="https://images.pexels.com/photos/17598332/pexels-photo-17598332.jpeg?auto=compress&cs=tinysrgb&w=1600" srcset="https://images.pexels.com/photos/17598332/pexels-photo-17598332.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/17598332/pexels-photo-17598332.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w" sizes="(max-width: 700px) 100vw, 60vw" data-fallback="images/menu/whole-branzino.jpg" alt="Illustration of whole grilled branzino with lemon and rosemary on an oval platter" width="1200" height="900" loading="lazy" decoding="async"></figure>
+    <figure class="media-frame reveal"><img src="images/photos/chef-plating.jpg" srcset="images/photos/chef-plating-600.jpg 600w, images/photos/chef-plating.jpg 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="A chef carefully garnishing a plated dish in the kitchen" width="1200" height="900" loading="lazy" decoding="async"></figure>
     <div class="reveal">
       <p class="eyebrow">Chapter two</p>
       <h2 id="coast-title">The coast</h2>
@@ -108,7 +108,7 @@
 
 <section class="section" aria-labelledby="table-title">
   <div class="container split">
-    <figure class="media-frame reveal"><img src="https://images.pexels.com/photos/29962487/pexels-photo-29962487.jpeg?auto=compress&cs=tinysrgb&w=1600" srcset="https://images.pexels.com/photos/29962487/pexels-photo-29962487.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/29962487/pexels-photo-29962487.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w" sizes="(max-width: 700px) 100vw, 60vw" data-fallback="images/about-table.jpg" alt="Illustration of a shared table set with lamb, roasted carrots, risotto, espresso and an old fashioned" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+    <figure class="media-frame reveal"><img src="images/photos/table-setting.jpg" srcset="images/photos/table-setting-600.jpg 600w, images/photos/table-setting.jpg 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="Dining table set with glassware, linen napkins and gold charger plates" width="1600" height="1200" loading="lazy" decoding="async"></figure>
     <div class="reveal">
       <p class="eyebrow">Chapter three</p>
       <h2 id="table-title">The table</h2>
@@ -149,7 +149,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="Ondessa home"><svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg><span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span></a>
+        <a class="brand" href="index.html" aria-label="Ondessa home"><img class="brand-logo footer-logo" src="images/logo-header.png" alt="ONDESSA — Coastal Hearth Kitchen" width="560" height="134"></a>
         <p>Wood-fired coastal cooking, natural wines and long tables by the water.</p>
       </div>
       <div>
@@ -166,7 +166,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="disclaimer">This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes. All reservations, catering inquiries and orders on this site operate in demonstration mode — nothing is sent to a restaurant. Food photography courtesy of Pexels contributors (free license).</p>
+      <p class="disclaimer">This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes. All reservations, catering inquiries and orders on this site operate in demonstration mode — nothing is sent to a restaurant. Photography: Pexels contributors (free license), self-hosted.</p>
       <p class="built-by">© <span data-year>2026</span> · Designed &amp; developed by <a href="https://virellionapex.com" rel="noopener">Virellion Apex</a></p>
     </div>
   </div>

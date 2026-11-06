@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Menu — Appetizers, Entrées, Desserts & Drinks | Ondessa</title>
   <meta name="description" content="Browse Ondessa's wood-fired menu: charred octopus, saffron seafood paella, whole branzino, desserts and cocktails. Order online for pickup or delivery (demo).">
-  <!-- Canonical URL placeholder: update BASE domain before launch (see README → SEO). -->
-  <link rel="canonical" href="https://restaurant.virellionapex.com/menu.html">
+  <!-- Canonical URL: live GitHub Pages address. Update BASE in the generator / find-and-replace if a custom domain is connected. -->
+  <link rel="canonical" href="https://lilmoniisenterprise.github.io/restaurant-demo/menu.html">
   <meta name="robots" content="index, follow">
+  <!-- GitHub Pages can't send custom headers, so the Content-Security-Policy is set here (mirrors _headers for Cloudflare). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-src https://www.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0e1719">
   <meta name="author" content="Virellion Apex">
   <!-- Open Graph -->
@@ -15,8 +18,8 @@
   <meta property="og:site_name" content="Ondessa — Coastal Hearth Kitchen">
   <meta property="og:title" content="Menu — Appetizers, Entrées, Desserts & Drinks | Ondessa">
   <meta property="og:description" content="Browse Ondessa's wood-fired menu: charred octopus, saffron seafood paella, whole branzino, desserts and cocktails. Order online for pickup or delivery (demo).">
-  <meta property="og:url" content="https://restaurant.virellionapex.com/menu.html">
-  <meta property="og:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://lilmoniisenterprise.github.io/restaurant-demo/menu.html">
+  <meta property="og:image" content="https://lilmoniisenterprise.github.io/restaurant-demo/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Ondessa logo over an illustrated table of wood-fired coastal dishes">
@@ -25,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Menu — Appetizers, Entrées, Desserts & Drinks | Ondessa">
   <meta name="twitter:description" content="Browse Ondessa's wood-fired menu: charred octopus, saffron seafood paella, whole branzino, desserts and cocktails. Order online for pickup or delivery (demo).">
-  <meta name="twitter:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://lilmoniisenterprise.github.io/restaurant-demo/assets/og-image.jpg">
   <!-- Icons & manifest -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -47,10 +50,7 @@
 </div>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html" aria-label="Ondessa, Coastal Hearth Kitchen — home">
-      <svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg>
-      <span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span>
-    </a>
+    <a class="brand" href="index.html" aria-label="Ondessa, Coastal Hearth Kitchen — home"><img class="brand-logo" src="images/logo-header.png" alt="ONDESSA — Coastal Hearth Kitchen" width="560" height="134"></a>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="menu.html" aria-current="page">Menu</a></li><li><a href="about.html">Our Story</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="catering.html">Catering</a></li><li><a href="contact.html">Visit</a></li></ul>
       <div class="nav-cta-mobile">
@@ -70,7 +70,7 @@
 <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
 <main id="main">
 <section class="page-hero" aria-labelledby="menu-title">
-  <img src="https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=2000" data-fallback="images/menu/saffron-paella.jpg" alt="" width="1200" height="900">
+  <img src="images/photos/hero-paella.jpg" srcset="images/photos/hero-paella-600.jpg 600w, images/photos/hero-paella.jpg 2000w" sizes="100vw" alt="" width="1200" height="900">
   <div class="container narrow">
     <p class="breadcrumb"><a href="index.html">Home</a> / Menu</p>
     <p class="eyebrow light">Dinner · Brunch · To-go</p>
@@ -124,7 +124,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="Ondessa home"><svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg><span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span></a>
+        <a class="brand" href="index.html" aria-label="Ondessa home"><img class="brand-logo footer-logo" src="images/logo-header.png" alt="ONDESSA — Coastal Hearth Kitchen" width="560" height="134"></a>
         <p>Wood-fired coastal cooking, natural wines and long tables by the water.</p>
       </div>
       <div>
@@ -141,7 +141,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="disclaimer">This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes. All reservations, catering inquiries and orders on this site operate in demonstration mode — nothing is sent to a restaurant. Food photography courtesy of Pexels contributors (free license).</p>
+      <p class="disclaimer">This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes. All reservations, catering inquiries and orders on this site operate in demonstration mode — nothing is sent to a restaurant. Photography: Pexels contributors (free license), self-hosted.</p>
       <p class="built-by">© <span data-year>2026</span> · Designed &amp; developed by <a href="https://virellionapex.com" rel="noopener">Virellion Apex</a></p>
     </div>
   </div>

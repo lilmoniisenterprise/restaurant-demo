@@ -715,3 +715,44 @@ form.drawer-body { display: block; }
 .map-actions .demo-chip { background: rgba(255,255,255,.95); }
 @media (max-width: 620px) { .map-embed { min-height: 340px; } .pay-methods { grid-template-columns: 1fr 1fr; } }
 .totals { column-gap: 0; } .totals dd { padding-left: 1rem; }
+
+/* 18. Official logo + discreet demo notice --------------------------------- */
+.brand-logo { height: 46px; width: auto; display: block; }
+.footer-logo { height: 54px; }
+.demo-ribbon { background: #0a1113; color: var(--text-muted-light); font-size: 0.74rem; letter-spacing: 0.02em; border-bottom: 1px solid var(--line-dark); }
+.demo-ribbon .container { padding-block: 0.35rem; gap: 0.6rem; }
+.demo-ribbon a { color: var(--brass); font-weight: 600; text-decoration: none; }
+.demo-ribbon a:hover { text-decoration: underline; }
+.demo-ribbon button { color: var(--text-muted-light); width: 30px; height: 30px; font-size: 1rem; }
+.demo-ribbon button:hover { background: rgba(243, 236, 224, 0.08); color: var(--text-light); }
+@media (max-width: 1100px) { .brand-logo { height: 40px; } }
+@media (max-width: 620px) { .brand-logo { height: 32px; } .footer-logo { height: 44px; } }
+@media (max-width: 380px) { .brand-logo { height: 28px; } }
+.photo-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.photo-gallery figcaption { left: 1rem; bottom: 1rem; color: var(--text-light); background: rgba(14, 23, 25, 0.75); font-size: 0.78rem; }
+@media (max-width: 920px) { .photo-gallery { grid-template-columns: 1fr 1fr; } .photo-gallery figure:last-child { grid-column: 1 / -1; } }
+@media (max-width: 620px) { .photo-gallery { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .hero-media img { object-position: 72% 70%; } }
+
+/* 19. Phone-first menu list (compact, app-style rows) ---------------------- */
+@media (max-width: 620px) {
+  .menu-grid { gap: 0.85rem; }
+  .menu-grid .dish-card { display: grid; grid-template-columns: 112px 1fr; border-radius: 14px; }
+  .menu-grid .dish-card:hover { transform: none; }
+  .menu-grid .dish-media { aspect-ratio: auto; height: 100%; min-height: 150px; }
+  .menu-grid .dish-card .badge { top: 0.5rem; left: 0.5rem; font-size: 0.58rem; padding: 0.25rem 0.45rem; letter-spacing: 0.08em; }
+  .menu-grid .card-body { padding: 0.85rem 0.9rem 0.9rem; gap: 0.35rem; }
+  .menu-grid .dish-top { flex-direction: column; gap: 0.15rem; }
+  .menu-grid .dish-top h3 { font-size: 1.15rem; line-height: 1.15; }
+  .menu-grid .price { font-size: 1.05rem; }
+  .menu-grid .card-body p { font-size: 0.82rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .menu-grid .tag { font-size: 0.6rem; padding: 0.15rem 0.4rem; }
+  .menu-grid .dish-foot { padding-top: 0.4rem; }
+  .menu-grid .btn-sm { min-height: 38px; padding: 0.4rem 0.9rem; }
+  .menu-section { margin-bottom: 2.5rem; }
+  .menu-section > h2 { flex-direction: column; gap: 0.1rem; }
+  .menu-tools { gap: 0.45rem; }
+  .diet-toggle { min-height: 38px; font-size: 0.8rem; padding: 0 0.7rem; }
+  .search-field input { min-height: 40px; }
+  .menu-toolbar .container { gap: 0.6rem; padding-block: 0.7rem; }
+}
