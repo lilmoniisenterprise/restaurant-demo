@@ -19,7 +19,7 @@ All reservations, catering inquiries, contact messages and orders run in **demon
 | **Mobile ordering demo** | Cart saved across pages (localStorage), quantity +/−, remove, pickup or delivery, subtotal, demo delivery fee, 8.25% tax estimate, total, sticky mobile "View order" bar, checkout with validation and pickup times based on opening hours, demo confirmation. **No card fields are collected.** |
 | **Reservations** | Date (closed Mondays, 60-day window), time slots generated from that day's hours (past times removed for today), party size, seating choice, contact details, policy checkbox, inline and summary errors, demo confirmation, downloadable `.ics` calendar file |
 | **Catering** | Three packages, event types, a four-step process, inquiry form (guest count 15–300, 7-day minimum notice, service style, dietary needs) and a **live cost estimate** |
-| **Location & hours** | Address, phone, email, hours table with today highlighted, labelled map placeholder, contact form, FAQ |
+| **Location & hours** | Address, phone, email, hours table with today highlighted, live OpenStreetMap map with a Get directions link, contact form, FAQ |
 | **Quality** | Semantic landmarks, skip link, keyboard-friendly navigation, visible focus states, ARIA on dialogs, filters and live regions, reduced-motion support, SEO and Open Graph/Twitter metadata, JSON-LD, sitemap, security headers with a strict CSP |
 | **Lead generation** | Dismissible demo ribbon plus "Request a Similar Website" and "Schedule a Consultation" calls to action linking to https://virellionapex.com |
 
@@ -57,13 +57,11 @@ restaurant-demo/
 
 ## Images
 
-All food, hearth and table artwork is **original illustration generated in code for this project**, so there are no licensing concerns. They are illustrations, not photographs. For a real client launch, replace them with the restaurant's own photography or properly licensed stock (for example Unsplash or Pexels, checking each licence). Keep the same file names, or update the paths:
+Food and venue photography loads from **Pexels** (free for commercial use, no attribution required; credited in the footer). Photo IDs are set in `PHOTOS` in `js/script.js` and `STATIC_PHOTOS` in the page HTML (`images.pexels.com/photos/<id>/...`). Each image also has a local fallback in `images/`, which the site swaps in automatically if a photo ever fails to load. For a real client, replace them with the restaurant's own photography.
 
-- Dish images: `images/menu/<dish-id>.jpg`, 4:3 ratio (1200×900 recommended)
-- Hero: `images/hero.jpg`, 2400×1400 recommended
-- Social share image: `assets/og-image.jpg`, 1200×630
+## Payment demo
 
-Compress photos before uploading (e.g. Squoosh, free) to around 150–250 KB each.
+Checkout shows a complete payment experience: tip selection, Card / Apple Pay / Google Pay / Pay at pickup, a processing animation, a receipt and a live order tracker. The card panel is pre-filled with a **read-only test card (4242 4242 4242 4242)**, so the demo can never collect real card data, and nothing is charged. To take real payments, replace the panel with Stripe Checkout / Payment Element or Square Web Payments and confirm orders through a server-side function (see "Connecting a real backend").
 
 ---
 
