@@ -1,0 +1,14 @@
+{
+  "name": "Ondessa — Coastal Hearth Kitchen (Demo)",
+  "short_name": "Ondessa",
+  "description": "Demonstration restaurant website by Virellion Apex.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e1719",
+  "theme_color": "#0e1719",
+  "icons": [
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

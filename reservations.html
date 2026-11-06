@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Reservations — Book a Table | Ondessa</title>
+  <meta name="description" content="Reserve a table at Ondessa for dinner or weekend brunch. Choose a date, time, party size and seating preference (demonstration booking).">
+  <!-- Canonical URL placeholder: update BASE domain before launch (see README → SEO). -->
+  <link rel="canonical" href="https://restaurant.virellionapex.com/reservations.html">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e1719">
+  <meta name="author" content="Virellion Apex">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ondessa — Coastal Hearth Kitchen">
+  <meta property="og:title" content="Reservations — Book a Table | Ondessa">
+  <meta property="og:description" content="Reserve a table at Ondessa for dinner or weekend brunch. Choose a date, time, party size and seating preference (demonstration booking).">
+  <meta property="og:url" content="https://restaurant.virellionapex.com/reservations.html">
+  <meta property="og:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ondessa logo over an illustrated table of wood-fired coastal dishes">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reservations — Book a Table | Ondessa">
+  <meta name="twitter:description" content="Reserve a table at Ondessa for dinner or weekend brunch. Choose a date, time, party size and seating preference (demonstration booking).">
+  <meta name="twitter:image" content="https://restaurant.virellionapex.com/assets/og-image.jpg">
+  <!-- Icons & manifest -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Fonts (Google Fonts, free; see README to self-host) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="demo-ribbon" role="region" aria-label="Demonstration notice">
+  <div class="container">
+    <span>Demo website by Virellion Apex<span class="hide-sm"> — fictional restaurant, simulated ordering &amp; bookings</span>.</span>
+    <a href="https://virellionapex.com" rel="noopener">Build a site like this →</a>
+    <button type="button" aria-label="Dismiss demonstration notice">×</button>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Ondessa, Coastal Hearth Kitchen — home">
+      <svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg>
+      <span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our Story</a></li><li><a href="reservations.html" aria-current="page">Reservations</a></li><li><a href="catering.html">Catering</a></li><li><a href="contact.html">Visit</a></li></ul>
+      <div class="nav-cta-mobile">
+        <a class="btn btn-primary btn-block" href="reservations.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Reserve a Table</a>
+        <a class="btn btn-ghost btn-block" href="tel:+14095550148"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>(409) 555-0148</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-brass btn-sm header-reserve" href="reservations.html">Reserve</a>
+      <button type="button" class="cart-btn" data-open-cart aria-haspopup="dialog" aria-controls="cart-drawer" aria-label="Open your order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="cart-label">Order</span><span class="cart-count" data-count="0">0</span>
+      </button>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+<main id="main">
+<section class="page-hero" aria-labelledby="res-title">
+  <img src="https://images.pexels.com/photos/37968303/pexels-photo-37968303.jpeg?auto=compress&cs=tinysrgb&w=2000" data-fallback="images/about-table.jpg" alt="" width="1600" height="1200">
+  <div class="container narrow">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Reservations</p>
+    <p class="eyebrow light">Book a table</p>
+    <h1 id="res-title">Reservations</h1>
+    <p class="lead">Choose a date, time and party size. Reservations open 60 days in advance; the bar is always held for walk-ins.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container form-layout">
+    <div class="form-card" id="reserve-card">
+      <h2>Reserve your table</h2>
+      <div class="demo-notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span><strong>Demonstration mode.</strong> This form validates your details and shows a sample confirmation. It does <strong>not</strong> book a table or send your information anywhere.</span></div>
+      <form id="reservation-form" novalidate>
+        <div class="error-summary" role="alert" hidden></div>
+        <div class="form-grid">
+          <div class="field">
+  <label for="res-date">Date<span class="req" aria-hidden="true">*</span></label>
+  <input id="res-date" name="date" type="date" required aria-describedby="res-date-hint res-date-error"><span class="hint" id="res-date-hint">Closed Mondays</span>
+  <p class="field-error" id="res-date-error"></p>
+</div>
+          <div class="field">
+  <label for="res-time">Time<span class="req" aria-hidden="true">*</span></label>
+  <select id="res-time" name="time" required aria-describedby="res-time-error"></select>
+  <p class="field-error" id="res-time-error"></p>
+</div>
+          <div class="field">
+  <label for="res-party">Party size<span class="req" aria-hidden="true">*</span></label>
+  <select id="res-party" name="party" required aria-describedby="res-party-error"><option value="">Select party size</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option><option value="large">11 or more</option></select>
+  <p class="field-error" id="res-party-error"></p>
+</div>
+          <div class="field">
+  <label for="res-occasion">Occasion <span class="hint">(optional)</span></label>
+  <select id="res-occasion" name="occasion"><option value="">None</option><option>Birthday</option><option>Anniversary</option><option>Date night</option><option>Business dinner</option><option>Celebration</option></select>
+  <p class="field-error" id="res-occasion-error"></p>
+</div>
+          <div class="demo-notice full" id="large-party-note" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg><span>Planning for 11 or more? Our Tide Room and catering team can help — <a href="catering.html">send a private dining inquiry</a>.</span></div>
+          <fieldset class="field full">
+            <legend>Seating preference<span class="req" aria-hidden="true">*</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="seating" value="Dining room" required checked aria-describedby="seating-error"><span>Dining room<small>Classic tables</small></span></label>
+              <label class="choice"><input type="radio" name="seating" value="Chef's counter"><span>Chef's counter<small>Facing the hearth</small></span></label>
+              <label class="choice"><input type="radio" name="seating" value="Seawall patio"><span>Seawall patio<small>Weather permitting</small></span></label>
+            </div>
+            <p class="field-error" id="seating-error"></p>
+          </fieldset>
+          <div class="field">
+  <label for="res-first">First name<span class="req" aria-hidden="true">*</span></label>
+  <input id="res-first" name="firstName" autocomplete="given-name" required aria-describedby="res-first-error">
+  <p class="field-error" id="res-first-error"></p>
+</div>
+          <div class="field">
+  <label for="res-last">Last name<span class="req" aria-hidden="true">*</span></label>
+  <input id="res-last" name="lastName" autocomplete="family-name" required aria-describedby="res-last-error">
+  <p class="field-error" id="res-last-error"></p>
+</div>
+          <div class="field">
+  <label for="res-email">Email<span class="req" aria-hidden="true">*</span></label>
+  <input id="res-email" name="email" type="email" autocomplete="email" required aria-describedby="res-email-error">
+  <p class="field-error" id="res-email-error"></p>
+</div>
+          <div class="field">
+  <label for="res-phone">Phone<span class="req" aria-hidden="true">*</span></label>
+  <input id="res-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(555) 555-0123" aria-describedby="res-phone-error">
+  <p class="field-error" id="res-phone-error"></p>
+</div>
+          <div class="field full">
+  <label for="res-notes">Special requests <span class="hint">(optional)</span></label>
+  <textarea id="res-notes" name="notes" rows="3" maxlength="500" placeholder="Allergies, accessibility needs, high chair…"></textarea>
+  <p class="field-error" id="res-notes-error"></p>
+</div>
+          <div class="field full">
+            <label class="check"><input type="checkbox" id="res-policy" name="policy" required data-msg-required="Please acknowledge the reservation policy." aria-describedby="res-policy-error"><span>I understand tables are held for 15 minutes and cancellations should be made 24 hours in advance.</span></label>
+            <p class="field-error" id="res-policy-error"></p>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Request reservation</button>
+          <p class="form-note">Fields marked <span class="req">*</span> are required.</p>
+        </div>
+      </form>
+      <div class="confirmation" id="res-confirmation" hidden>
+        <div class="check-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h2 id="res-confirm-heading" tabindex="-1">Demo reservation complete</h2>
+        <p>Your details passed validation. <strong>This is a demonstration — no table has been booked and nothing was sent to a restaurant.</strong></p>
+        <dl class="summary-list" id="res-summary"></dl>
+        <div class="form-actions justify-center">
+          <a class="btn btn-outline" id="res-ics" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Download calendar file</a>
+          <button type="button" class="btn btn-primary" id="res-again">Make another reservation</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="aside-card" aria-labelledby="res-aside-title">
+      <h3 id="res-aside-title">Good to know</h3>
+      <ul>
+        <li>Parties of 1–10 can book online.</li>
+        <li>Tables are held for 15 minutes past the reservation time.</li>
+        <li>Chef's counter seats are best for parties of 1–4.</li>
+        <li>Patio seating is weather-dependent; we'll move you inside if needed.</li>
+      </ul>
+      <hr>
+      <h3>Hours</h3>
+      <table class="hours-table"><caption class="visually-hidden">Opening hours (Central Time)</caption><tbody><tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr><tr data-day="2"><th scope="row">Tuesday</th><td>5:00 PM – 10:00 PM</td></tr><tr data-day="3"><th scope="row">Wednesday</th><td>5:00 PM – 10:00 PM</td></tr><tr data-day="4"><th scope="row">Thursday</th><td>5:00 PM – 10:00 PM</td></tr><tr data-day="5"><th scope="row">Friday</th><td>5:00 PM – 11:00 PM</td></tr><tr data-day="6"><th scope="row">Saturday</th><td>11:30 AM – 11:00 PM</td></tr><tr data-day="0"><th scope="row">Sunday</th><td>11:00 AM – 9:00 PM</td></tr></tbody></table>
+      <hr>
+      <p>Prefer to talk? Call <a class="link-arrow" href="tel:+14095550148">(409) 555-0148</a></p>
+      <p>Planning for 11+? <a class="link-arrow" href="catering.html">Private dining</a></p>
+    </aside>
+  </div>
+</section>
+</main>
+<section class="section-tight on-dark">
+  <div class="container">
+    <div class="agency-cta">
+      <div>
+        <h3>Want a website like this for your restaurant?</h3>
+        <p>Virellion Apex designs and builds premium websites with menus, online ordering, reservations and catering lead capture — connected to the tools you already use.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-brass" href="https://virellionapex.com" rel="noopener">Request a Similar Website</a>
+        <a class="btn btn-ghost" href="https://virellionapex.com" rel="noopener">Schedule a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Ondessa home"><svg class="brand-mark" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke="#e7b980" stroke-linecap="round"><circle r="92" stroke-width="6"/><path d="M-60,22 C-40,6 -20,6 0,22 C20,38 40,38 60,22" stroke-width="8"/><path d="M-60,46 C-40,30 -20,30 0,46 C20,62 40,62 60,46" stroke-width="8" opacity=".55"/><path d="M0,-62 C26,-36 22,-14 0,2 C-22,-14 -26,-36 0,-62Z" fill="#e7b980" stroke="none"/><path d="M0,-40 C9,-28 8,-18 0,-10 C-8,-18 -9,-28 0,-40Z" fill="#0e1719" stroke="none"/></g></svg><span class="brand-text"><span class="brand-name">ONDESSA</span><span class="brand-sub">Coastal Hearth Kitchen</span></span></a>
+        <p>Wood-fired coastal cooking, natural wines and long tables by the water.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">Our Story</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="catering.html">Catering</a></li><li><a href="contact.html">Visit</a></li><li><a href="#" data-open-cart>Order online</a></li></ul>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <address>88 Seawall Promenade, Galveston, TX 77550<br><a href="tel:+14095550148">(409) 555-0148</a><br><a href="mailto:hello@ondessa.example">hello@ondessa.example</a></address>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <div class="footer-hours"><span>Mon</span><span>Closed</span><span>Tue</span><span>5:00 PM – 10:00 PM</span><span>Wed</span><span>5:00 PM – 10:00 PM</span><span>Thu</span><span>5:00 PM – 10:00 PM</span><span>Fri</span><span>5:00 PM – 11:00 PM</span><span>Sat</span><span>11:30 AM – 11:00 PM</span><span>Sun</span><span>11:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="disclaimer">This website is a demonstration project developed by Virellion Apex. Restaurant name, menu, pricing, and business information are fictional and provided for demonstration purposes. All reservations, catering inquiries and orders on this site operate in demonstration mode — nothing is sent to a restaurant. Food photography courtesy of Pexels contributors (free license).</p>
+      <p class="built-by">© <span data-year>2026</span> · Designed &amp; developed by <a href="https://virellionapex.com" rel="noopener">Virellion Apex</a></p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="drawer" id="cart-drawer" aria-labelledby="drawer-title">
+  <div class="drawer-head">
+    <h2 id="drawer-title">Your Order</h2>
+    <button type="button" class="icon-btn" data-close-drawer aria-label="Close order panel">×</button>
+  </div>
+
+  <!-- VIEW: cart -->
+  <div class="drawer-view" data-view="cart">
+    <div class="drawer-body">
+      <div class="demo-notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span><strong>Demo ordering.</strong> Add dishes, adjust quantities and try checkout. No order is sent and no payment is taken.</span></div>
+      <div class="segmented" role="radiogroup" aria-label="Order type">
+        <label><input type="radio" name="order-mode" value="pickup" checked><span>Pickup</span></label>
+        <label><input type="radio" name="order-mode" value="delivery"><span>Delivery</span></label>
+      </div>
+      <ul class="cart-items" id="cart-items" aria-label="Items in your order"></ul>
+      <div class="cart-empty" id="cart-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <p>Your order is empty.</p>
+        <a class="btn btn-brass btn-sm" href="menu.html">Browse the menu</a>
+      </div>
+    </div>
+    <div class="drawer-foot" id="cart-foot" hidden>
+      <dl class="totals" aria-label="Order totals">
+        <dt>Subtotal</dt><dd id="t-subtotal">$0.00</dd>
+        <dt id="t-fee-label">Delivery fee</dt><dd id="t-fee-row"><span id="t-fee">$0.00</span></dd>
+        <dt>Est. tax (8.25%)</dt><dd id="t-tax">$0.00</dd>
+        <dt class="grand">Total</dt><dd class="grand" id="t-total">$0.00</dd>
+      </dl>
+      <button type="button" class="btn btn-primary btn-block" id="to-checkout">Continue to checkout</button>
+      <button type="button" class="remove-btn" id="clear-cart" data-center>Clear order</button>
+    </div>
+  </div>
+
+  <!-- VIEW: checkout -->
+  <div class="drawer-view" data-view="checkout" hidden>
+    <form class="drawer-body" id="checkout-form" novalidate>
+      <div class="error-summary" role="alert" hidden></div>
+      <div class="form-grid">
+        <div class="field">
+          <label for="co-name">Full name<span class="req" aria-hidden="true">*</span></label>
+          <input id="co-name" name="name" autocomplete="name" required aria-describedby="co-name-error">
+          <p class="field-error" id="co-name-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-phone">Mobile phone<span class="req" aria-hidden="true">*</span></label>
+          <input id="co-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="co-phone-hint co-phone-error">
+          <span class="hint" id="co-phone-hint">For order updates. Demo only — nothing is sent.</span>
+          <p class="field-error" id="co-phone-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-email">Email<span class="req" aria-hidden="true">*</span></label>
+          <input id="co-email" name="email" type="email" autocomplete="email" required aria-describedby="co-email-error">
+          <p class="field-error" id="co-email-error"></p>
+        </div>
+        <div class="field" id="checkout-address-wrap" hidden>
+          <label for="co-address">Delivery address<span class="req" aria-hidden="true">*</span></label>
+          <input id="co-address" name="address" autocomplete="street-address" aria-describedby="co-address-error">
+          <p class="field-error" id="co-address-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-time" id="co-mode-label">Pickup time</label>
+          <select id="co-time" name="time" required data-label="Time" aria-describedby="co-time-error"></select>
+          <p class="field-error" id="co-time-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-notes">Kitchen notes <span class="hint">(optional)</span></label>
+          <textarea id="co-notes" name="notes" rows="3" maxlength="400" placeholder="Allergies, utensils, etc."></textarea>
+        </div>
+      </div>
+
+      <fieldset class="co-section">
+        <legend>Add a tip for the kitchen</legend>
+        <div class="segmented seg-4" role="radiogroup" aria-label="Tip amount">
+          <label><input type="radio" name="tip" value="0.15"><span>15%</span></label>
+          <label><input type="radio" name="tip" value="0.18" checked><span>18%</span></label>
+          <label><input type="radio" name="tip" value="0.20"><span>20%</span></label>
+          <label><input type="radio" name="tip" value="0"><span>None</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="co-section">
+        <legend>Payment</legend>
+        <div class="pay-methods" role="radiogroup" aria-label="Payment method">
+          <label class="pay-method"><input type="radio" name="paymethod" value="card" checked><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg>Card</span></label>
+          <label class="pay-method"><input type="radio" name="paymethod" value="apple"><span><b class="wallet-mark">&#9679;</b>Apple Pay</span></label>
+          <label class="pay-method"><input type="radio" name="paymethod" value="google"><span><b class="wallet-mark g">G</b>Google Pay</span></label>
+          <label class="pay-method"><input type="radio" name="paymethod" value="pickup"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Pay at pickup</span></label>
+        </div>
+
+        <div class="pay-panel" data-pay="card">
+          <div class="card-element">
+            <div class="ce-top"><span class="test-badge">Test mode</span><span class="brands"><i>VISA</i><i>MC</i><i>AMEX</i></span></div>
+            <label class="ce-field ce-full"><span>Card number</span><input value="4242 4242 4242 4242" readonly aria-readonly="true" tabindex="-1" autocomplete="off" inputmode="none"><b class="ce-lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></b></label>
+            <label class="ce-field"><span>Expiry</span><input value="12 / 34" readonly aria-readonly="true" tabindex="-1" autocomplete="off"></label>
+            <label class="ce-field"><span>CVC</span><input value="•••" readonly aria-readonly="true" tabindex="-1" autocomplete="off"></label>
+            <label class="ce-field"><span>ZIP</span><input value="77550" readonly aria-readonly="true" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <p class="pay-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>This demo uses a pre-filled <strong>test card</strong> and never accepts real card numbers. On a live site this panel is a secure, PCI-compliant payment form (e.g. Stripe or Square) and the card is charged when you tap Pay.</span></p>
+        </div>
+        <div class="pay-panel" data-pay="apple" hidden><p class="pay-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Tap <strong>Pay</strong> to see how a one-touch wallet checkout works. Demo only — no wallet is charged.</span></p></div>
+        <div class="pay-panel" data-pay="google" hidden><p class="pay-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Tap <strong>Pay</strong> to preview a one-touch Google Pay checkout. Demo only — nothing is charged.</span></p></div>
+        <div class="pay-panel" data-pay="pickup" hidden><p class="pay-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Reserve your order now and pay by card or cash when you collect it.</span></p></div>
+      </fieldset>
+
+      <dl class="totals co-totals" aria-label="Order total">
+        <dt>Subtotal</dt><dd id="co-subtotal">$0.00</dd>
+        <dt id="co-fee-label">Delivery fee</dt><dd id="co-fee">$0.00</dd>
+        <dt>Est. tax (8.25%)</dt><dd id="co-tax">$0.00</dd>
+        <dt>Tip</dt><dd id="co-tip">$0.00</dd>
+        <dt class="grand">Total</dt><dd class="grand" id="co-total">$0.00</dd>
+      </dl>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-block pay-btn" id="pay-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg><span id="pay-label">Pay $0.00</span></button>
+        <button type="button" class="btn btn-ghost btn-block" id="back-to-cart">Back to order</button>
+      </div>
+      <p class="secure-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Encrypted checkout · Demo mode — no money moves</p>
+    </form>
+  </div>
+
+  <!-- Wallet sheet (simulated Apple Pay / Google Pay) -->
+  <div class="wallet-sheet" id="wallet-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="ws-title">
+    <div class="ws-card">
+      <p class="ws-brand" id="ws-title">Apple Pay</p>
+      <dl class="ws-rows"><dt>Pay</dt><dd>ONDESSA (DEMO)</dd><dt>Card</dt><dd>Visa •••• 4242</dd><dt>Contact</dt><dd id="ws-contact"></dd></dl>
+      <p class="ws-total"><span>Total</span><strong id="ws-total">$0.00</strong></p>
+      <button type="button" class="btn btn-brass btn-block" id="ws-confirm">Confirm payment</button>
+      <button type="button" class="remove-btn" id="ws-cancel" data-center>Cancel</button>
+    </div>
+  </div>
+
+  <!-- Processing overlay -->
+  <div class="processing" id="processing" hidden role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <ol class="proc-steps">
+      <li data-step="0">Securing connection</li>
+      <li data-step="1" id="proc-auth">Authorizing payment</li>
+      <li data-step="2">Sending order to the kitchen</li>
+    </ol>
+  </div>
+
+  <!-- VIEW: confirmation -->
+  <div class="drawer-view" data-view="done" hidden>
+    <div class="drawer-body confirmation">
+      <div class="check-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h3 id="done-heading" tabindex="-1">Order confirmed!</h3>
+      <p id="done-sub">Thanks — the kitchen has your order.</p>
+      <ol class="tracker" id="tracker" aria-label="Order status">
+        <li class="done"><b></b><span>Received</span></li>
+        <li><b></b><span>Preparing</span></li>
+        <li><b></b><span id="tracker-ready">Ready for pickup</span></li>
+      </ol>
+      <p class="hint hint-light" id="tracker-eta"></p>
+      <dl class="summary-list" id="order-summary"></dl>
+      <p class="demo-footnote">Demonstration only: no payment was taken and no order was sent to a restaurant.</p>
+      <div class="cta-actions justify-center">
+        <a class="btn btn-ghost btn-sm" href="menu.html" id="done-menu">Order more</a>
+        <button type="button" class="btn btn-brass btn-sm" id="done-close">Close</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
